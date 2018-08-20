@@ -1,0 +1,11 @@
+{
+  "@microsoft/generator-sharepoint": {
+    "isCreatingSolution": true,
+    "environment": "spo",
+    "version": "1.5.1",
+    "libraryName": "lms-365",
+    "libraryId": "43c6334e-9133-42a7-90de-59087c00366c",
+    "packageManager": "npm",
+    "componentType": "webpart"
+  }
+}

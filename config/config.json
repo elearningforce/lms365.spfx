@@ -1,0 +1,36 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/config.2.0.schema.json",
+  "version": "2.0",
+  "bundles": {
+    "course-catalog-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/course-catalog/course-catalog-web-part.js",
+          "manifest": "./src/webparts/course-catalog/course-catalog-web-part.manifest.json"
+        }
+      ]
+    },
+    "dashboard-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/dashboard/dashboard-web-part.js",
+          "manifest": "./src/webparts/dashboard/dashboard-web-part.manifest.json"
+        }
+      ]
+    },
+    "course-home-page-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/course-page/course-page-web-part.js",
+          "manifest": "./src/webparts/course-page/course-page-web-part.manifest.json"
+        }
+      ]
+    }
+  },
+  "externals": {},
+  "localizedResources": {
+    "CourseCatalogWebPartStrings": "lib/webparts/course-catalog/loc/{locale}.js",
+    "DashboardWebPartStrings": "lib/webparts/dashboard/loc/{locale}.js",
+    "CourseHomePageWebPartStrings": "lib/webparts/course-page/loc/{locale}.js"
+  }
+}
