@@ -34,6 +34,7 @@ export class WebPartLoader extends React.Component<WebPartLoaderProps> {
         const { pageContext } = this.props.context;
 
         window['_spPageContextInfo'] = {
+            aadTenantId: pageContext.aadInfo.tenantId,
             currentCultureName: pageContext.cultureInfo.currentCultureName,
             currentUICultureName: pageContext.cultureInfo.currentUICultureName,
             webAbsoluteUrl: pageContext.web.absoluteUrl
