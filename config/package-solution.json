@@ -7,6 +7,8 @@
     // "id": "43c6334e-9133-42a7-90de-59087c00366c", //Dev
     // "name": "LMS365-QA",
     // "id": "3e54de03-1535-479c-9682-846fddd43f20", //QA
+    // "name": "LMS365-HOTFIX",
+    // "id": "15e85a9a-0b5d-4938-8065-4155535a7b10", //HOTFIX
     "version": "3.0.0.0",
     "includeClientSideAssets": true,
     "skipFeatureDeployment": true
@@ -15,5 +17,6 @@
     "zippedPackage": "solution/lms365.sppkg"
     // "zippedPackage": "solution/lms365-dev.sppkg"
     // "zippedPackage": "solution/lms365-qa.sppkg"
+    // "zippedPackage": "solution/lms365-hotfix.sppkg"
   }
 }
