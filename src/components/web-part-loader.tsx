@@ -37,7 +37,8 @@ export class WebPartLoader extends React.Component<WebPartLoaderProps> {
             aadTenantId: pageContext.aadInfo.tenantId,
             currentCultureName: pageContext.cultureInfo.currentCultureName,
             currentUICultureName: pageContext.cultureInfo.currentUICultureName,
-            webAbsoluteUrl: pageContext.web.absoluteUrl
+            webAbsoluteUrl: pageContext.web.absoluteUrl,
+            themeCacheToken: pageContext.legacyPageContext.themeCacheToken,
         };
     }
 
