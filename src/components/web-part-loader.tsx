@@ -31,12 +31,13 @@ export class WebPartLoader extends React.Component<WebPartLoaderProps> {
     }
 
     private initializePageContext() {
-        const { aadInfo, cultureInfo, web, user } = this.props.context.pageContext;
+        const { aadInfo, cultureInfo, legacyPageContext, web, user } = this.props.context.pageContext;
 
         window['_spPageContextInfo'] = {
             aadTenantId: aadInfo.tenantId,
             currentCultureName: cultureInfo.currentCultureName,
             currentUICultureName: cultureInfo.currentUICultureName,
+            themeCacheToken: legacyPageContext.themeCacheToken,
             webAbsoluteUrl: web.absoluteUrl,
 
             userEmail: user.email,
