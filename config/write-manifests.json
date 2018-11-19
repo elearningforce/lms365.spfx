@@ -1,4 +1,7 @@
 {
   "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/write-manifests.schema.json",
-  "cdnBasePath": "<!-- PATH TO CDN -->"
+  "cdnBasePath": "https://assets.365.systems/js/"
+  // "cdnBasePath": "https://assets-dev.365.systems/js/"
+  // "cdnBasePath": "https://assets-qa.365.systems/js/"
+  // "cdnBasePath": "https://assets-hotfix.365.systems/js/"
 }

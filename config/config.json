@@ -28,9 +28,5 @@
     }
   },
   "externals": {},
-  "localizedResources": {
-    "CourseCatalogWebPartStrings": "lib/webparts/course-catalog/loc/{locale}.js",
-    "DashboardWebPartStrings": "lib/webparts/dashboard/loc/{locale}.js",
-    "CourseHomePageWebPartStrings": "lib/webparts/course-page/loc/{locale}.js"
-  }
+  "localizedResources": { }
 }

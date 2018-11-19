@@ -10,7 +10,7 @@
     // "name": "LMS365-HOTFIX",
     // "id": "15e85a9a-0b5d-4938-8065-4155535a7b10", //HOTFIX
     "version": "3.0.0.0",
-    "includeClientSideAssets": true,
+    "includeClientSideAssets": false,
     "skipFeatureDeployment": true
   },
   "paths": {
