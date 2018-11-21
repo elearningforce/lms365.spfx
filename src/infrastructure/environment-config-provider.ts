@@ -13,7 +13,7 @@ export class EnvironmentConfigProvider extends EnvironmentConfigProviderBase {
         super();
 
         this._queryExecuter = new QueryExecuter();
-        this._storage = new LocalStorage();
+        this._storage = new LocalStorage(true);
     }
 
     public async get(resolve?: (environmentConfig: EnvironmentConfig) => void, reject?: (error: any) => void): Promise<EnvironmentConfig> {

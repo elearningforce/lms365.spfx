@@ -1,12 +1,22 @@
 import 'core-js/es6/array';
 import 'core-js/es6/string';
 
-
 import { Version } from '@microsoft/sp-core-library';
 import { BaseClientSideWebPart } from '@microsoft/sp-webpart-base';
 import { EnvironmentConfigProvider } from '../infrastructure/environment-config-provider';
 
 export abstract class LmsWebPart extends BaseClientSideWebPart<{}> {
+    private createScriptElement(url: string): HTMLElement {
+        const result = document.createElement('script');
+
+        result.async = true;
+        result.charset = 'utf-8';
+        result.src = url;
+        result.type = 'text/javascript';
+
+        return result;
+    }
+
     private initializePageContext() {
         const { aadInfo, cultureInfo, legacyPageContext, web, user } = this.context.pageContext;
 
@@ -27,7 +37,11 @@ export abstract class LmsWebPart extends BaseClientSideWebPart<{}> {
         this.initializePageContext();
 
         EnvironmentConfigProvider.instance.get(x => {
-            this.domElement.innerHTML = `<script src="${x.assetsUrl}${this.moduleKey}"></script>`;
+            const scriptUrl = `${x.assetsUrl}assets/js/${this.moduleKey}`;
+            const scriptElement = this.createScriptElement(scriptUrl);
+
+            this.domElement.innerHTML = `<div class="--efLms365${this.moduleKey}"></div>`;
+            this.domElement.appendChild(scriptElement);
         });
     }
 

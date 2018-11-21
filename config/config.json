@@ -2,7 +2,7 @@
   "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/config.2.0.schema.json",
   "version": "2.0",
   "bundles": {
-    "course-catalog-web-part": {
+    "course-catalog": {
       "components": [
         {
           "entrypoint": "./lib/webparts/course-catalog/course-catalog-web-part.js",
@@ -10,7 +10,7 @@
         }
       ]
     },
-    "dashboard-web-part": {
+    "dashboard": {
       "components": [
         {
           "entrypoint": "./lib/webparts/dashboard/dashboard-web-part.js",
@@ -18,7 +18,7 @@
         }
       ]
     },
-    "course-home-page-web-part": {
+    "course-page": {
       "components": [
         {
           "entrypoint": "./lib/webparts/course-page/course-page-web-part.js",
