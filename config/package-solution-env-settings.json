@@ -1,0 +1,292 @@
+{
+  "environments": [
+    {
+      "environment": "default",
+      "id": "43c6334e-9133-42a7-90de-59087c00366c",
+      "name": "LMS365 Development",
+      "zip": "solution/lms365-development.sppkg",
+      "cdn": "https://assets-dev.365.systems/assets/js/",
+      "entries": [
+        {
+          "id": "70dbb8e9-6de8-4f3a-b270-7193f1256c34",
+          "location": "./src/webparts/course-catalog/course-catalog-web-part.manifest.json",
+          "alias": "CourseCatalogWebPart-Dev",
+          "preconfiguredEntries": [
+            {
+              "groupId": "5c03119e-3074-46fd-976b-c60198311f70",
+              "title": {
+                "default": "LMS365 Course Catalog (Development)"
+              }
+            }
+          ]
+        },
+        {
+          "id": "16c286c7-07f4-49e1-8a32-8ffc17d385b8",
+          "location": "./src/webparts/dashboard/dashboard-web-part.manifest.json",
+          "alias": "DashboardWebPart-Development",
+          "preconfiguredEntries": [
+            {
+              "groupId": "5c03119e-3074-46fd-976b-c60198311f70",
+              "title": {
+                "default": "LMS365 Dashboard (Development)"
+              }
+            }
+          ]
+        },
+        {
+          "id": "35503f5c-2031-4b90-ba03-460e9568e44b",
+          "location": "./src/webparts/course-page/course-page-web-part.manifest.json",
+          "alias": "CoursePageWebPart-Development",
+          "preconfiguredEntries": [
+            {
+              "groupId": "5c03119e-3074-46fd-976b-c60198311f70",
+              "title": {
+                "default": "LMS365 Course Homepage (Development)"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "environment": "Production",
+      "id": "cd1d88de-d0de-4a26-ae37-dd7452cdcf61",
+      "name": "LMS365",
+      "zip": "solution/lms365.sppkg",
+      "cdn": "https://assets.365.systems/assets/js/",
+      "entries": [
+        {
+          "id": "04bde056-a810-4e0a-9018-3fda6c163184",
+          "location": "./src/webparts/course-catalog/course-catalog-web-part.manifest.json",
+          "alias": "CourseCatalogWebPart",
+          "preconfiguredEntries": [
+            {
+              "groupId": "5c03119e-3074-46fd-976b-c60198311f70",
+              "title": {
+                "default": "LMS365 Course Catalog"
+              }
+            }
+          ]
+        },
+        {
+          "id": "f98cfd95-a5a1-406c-8bfe-cd66f4c1dc49",
+          "location": "./src/webparts/dashboard/dashboard-web-part.manifest.json",
+          "alias": "DashboardWebPart",
+          "preconfiguredEntries": [
+            {
+              "groupId": "5c03119e-3074-46fd-976b-c60198311f70",
+              "title": {
+                "default": "LMS365 Dashboard"
+              }
+            }
+          ]
+        },
+        {
+          "id": "764aa5fb-22c1-456e-ae17-dea07f4cd86e",
+          "location": "./src/webparts/course-page/course-page-web-part.manifest.json",
+          "alias": "CoursePageWebPart",
+          "preconfiguredEntries": [
+            {
+              "groupId": "5c03119e-3074-46fd-976b-c60198311f70",
+              "title": {
+                "default": "LMS365 Course Homepage"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "environment": "QA",
+      "id": "3e54de03-1535-479c-9682-846fddd43f20",
+      "name": "LMS365 QA",
+      "zip": "solution/lms365-qa.sppkg",
+      "cdn": "https://assets-qa.365.systems/assets/js/",
+      "entries": [
+        {
+          "id": "d8f61cfb-23e3-4c79-b14f-fe9cecbd21b1",
+          "location": "./src/webparts/course-catalog/course-catalog-web-part.manifest.json",
+          "alias": "CourseCatalogWebPart-QA",
+          "preconfiguredEntries": [
+            {
+              "groupId": "5c03119e-3074-46fd-976b-c60198311f70",
+              "title": {
+                "default": "LMS365 Course Catalog (QA)"
+              }
+            }
+          ]
+        },
+        {
+          "id": "9502b73b-000c-4185-9686-844781be5f36",
+          "location": "./src/webparts/dashboard/dashboard-web-part.manifest.json",
+          "alias": "DashboardWebPart-QA",
+          "preconfiguredEntries": [
+            {
+              "groupId": "5c03119e-3074-46fd-976b-c60198311f70",
+              "title": {
+                "default": "LMS365 Dashboard (QA)"
+              }
+            }
+          ]
+        },
+        {
+          "id": "02d3c727-6649-4e3b-998f-08182e701787",
+          "location": "./src/webparts/course-page/course-page-web-part.manifest.json",
+          "alias": "CoursePageWebPart-QA",
+          "preconfiguredEntries": [
+            {
+              "groupId": "5c03119e-3074-46fd-976b-c60198311f70",
+              "title": {
+                "default": "LMS365 Course Homepage (QA)"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "environment": "Hotfix",
+      "id": "15e85a9a-0b5d-4938-8065-4155535a7b10",
+      "name": "LMS365 Hotfix",
+      "zip": "solution/lms365-hotfix.sppkg",
+      "cdn": "https://assets-hotfix.365.systems/assets/js/",
+      "entries": [
+        {
+          "id": "f6b623e4-2a64-4697-be47-9ae750693f62",
+          "location": "./src/webparts/course-catalog/course-catalog-web-part.manifest.json",
+          "alias": "CourseCatalogWebPart-Hotfix",
+          "preconfiguredEntries": [
+            {
+              "groupId": "5c03119e-3074-46fd-976b-c60198311f70",
+              "title": {
+                "default": "LMS365 Course Catalog (Hotfix)"
+              }
+            }
+          ]
+        },
+        {
+          "id": "f9a3e2ed-c457-44c3-a4c9-008a4288e9ad",
+          "location": "./src/webparts/dashboard/dashboard-web-part.manifest.json",
+          "alias": "DashboardWebPart-Hotfix",
+          "preconfiguredEntries": [
+            {
+              "groupId": "5c03119e-3074-46fd-976b-c60198311f70",
+              "title": {
+                "default": "LMS365 Dashboard (Hotfix)"
+              }
+            }
+          ]
+        },
+        {
+          "id": "66ad15e0-b13c-46ff-af43-d5d565945723",
+          "location": "./src/webparts/course-page/course-page-web-part.manifest.json",
+          "alias": "CoursePageWebPart-Hotfix",
+          "preconfiguredEntries": [
+            {
+              "groupId": "5c03119e-3074-46fd-976b-c60198311f70",
+              "title": {
+                "default": "LMS365 Course Homepage (Hotfix)"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "environment": "UsGovProduction",
+      "id": "0033347b-d2da-4726-9ec2-17f65758ac1f",
+      "name": "LMS365 Us Gov",
+      "zip": "solution/lms365-usgov.sppkg",
+      "cdn": "https://assets.usgcc365.systems/assets/js/",
+      "entries": [
+        {
+          "id": "63e96d47-22c7-49c1-9cdb-e47dfbd8b350",
+          "location": "./src/webparts/course-catalog/course-catalog-web-part.manifest.json",
+          "alias": "CoursePageWebPart-UsGov",
+          "preconfiguredEntries": [
+            {
+              "groupId": "5c03119e-3074-46fd-976b-c60198311f70",
+              "title": {
+                "default": "LMS365 Course Homepage"
+              }
+            }
+          ]
+        },
+        {
+          "id": "4bdeadc1-9268-4362-9ecc-d143f3ab796b",
+          "location": "./src/webparts/dashboard/dashboard-web-part.manifest.json",
+          "alias": "DashboardWebPart-UsGov",
+          "preconfiguredEntries": [
+            {
+              "groupId": "5c03119e-3074-46fd-976b-c60198311f70",
+              "title": {
+                "default": "LMS365 Dashboard"
+              }
+            }
+          ]
+        },
+        {
+          "id": "c77ce6dd-7cf8-4942-9211-807af750840c",
+          "location": "./src/webparts/course-page/course-page-web-part.manifest.json",
+          "alias": "CoursePageWebPart-UsGov",
+          "preconfiguredEntries": [
+            {
+              "groupId": "5c03119e-3074-46fd-976b-c60198311f70",
+              "title": {
+                "default": "LMS365 Course Homepage"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "environment": "UsGovQa",
+      "id": "1484c23f-4bca-4843-b971-f689d85db57d",
+      "name": "LMS365 Us Gov QA",
+      "zip": "solution/lms365-usgovqa.sppkg",
+      "cdn": "https://assets-qa.usgcc365.systems/assets/js/",
+      "entries": [
+        {
+          "id": "6a608e18-ead0-4353-8786-8f431834cc34",
+          "location": "./src/webparts/course-catalog/course-catalog-web-part.manifest.json",
+          "alias": "CourseCatalogWebPart-UsGovQa",
+          "preconfiguredEntries": [
+            {
+              "groupId": "5c03119e-3074-46fd-976b-c60198311f70",
+              "title": {
+                "default": "LMS365 Course Catalog (Us Gov Qa)"
+              }
+            }
+          ]
+        },
+        {
+          "id": "c093eea9-2a14-406e-885e-b958db30c35e",
+          "location": "./src/webparts/dashboard/dashboard-web-part.manifest.json",
+          "alias": "DashboardWebPart-UsGovQa",
+          "preconfiguredEntries": [
+            {
+              "groupId": "5c03119e-3074-46fd-976b-c60198311f70",
+              "title": {
+                "default": "LMS365 Dashboard (Us Gov Qa)"
+              }
+            }
+          ]
+        },
+        {
+          "id": "dcc51452-c982-402a-885b-aab3a37f63b6",
+          "location": "./src/webparts/course-page/course-page-web-part.manifest.json",
+          "alias": "CoursePageWebPart-UsGovQa",
+          "preconfiguredEntries": [
+            {
+              "groupId": "5c03119e-3074-46fd-976b-c60198311f70",
+              "title": {
+                "default": "LMS365 Course Homepage (Us Gov Qa)"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

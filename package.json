@@ -8,7 +8,14 @@
   "scripts": {
     "build": "gulp bundle",
     "clean": "gulp clean",
-    "package": "gulp clean && gulp bundle --ship && gulp package-solution --ship",
+    "package": "gulp change-pkg-settings --env default && gulp clean && gulp bundle --ship && gulp package-solution --ship",
+    "package:dev": "gulp change-pkg-settings --env default && gulp clean && gulp bundle --ship && gulp package-solution --ship",
+    "package:prod": "gulp change-pkg-settings --env Production && gulp clean && gulp bundle --ship && gulp package-solution --ship",
+    "package:qa": "gulp change-pkg-settings --env QA && gulp clean && gulp bundle --ship && gulp package-solution --ship",
+    "package:hotfix": "gulp change-pkg-settings --env Hotfix && gulp clean && gulp bundle --ship && gulp package-solution --ship",
+    "package:usgov": "gulp change-pkg-settings --env UsGovProduction && gulp clean && gulp bundle --ship && gulp package-solution --ship",
+    "package:usgovqa": "gulp change-pkg-settings --env UsGovQa && gulp clean && gulp bundle --ship && gulp package-solution --ship",
+
     "test": "gulp test"
   },
   "dependencies": {
@@ -24,9 +31,10 @@
     "@microsoft/sp-build-web": "1.5.1",
     "@microsoft/sp-module-interfaces": "1.5.1",
     "@microsoft/sp-webpart-workbench": "1.5.1",
-    "gulp": "~3.9.1",
     "@types/chai": "3.4.34",
     "@types/mocha": "2.2.38",
-    "ajv": "~5.2.2"
+    "ajv": "~5.2.2",
+    "gulp": "~3.9.1",
+    "uuid": "3.3.2"
   }
 }

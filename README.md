@@ -19,8 +19,9 @@ This package produces the following:
 
 ### Build options
 
-gulp clean - TODO
-gulp test - TODO
-gulp serve - TODO
-gulp bundle - TODO
-gulp package-solution - TODO
+npm run package:dev
+npm run package:qa
+npm run package:prod
+npm run package:hotfix
+npm run package:usgov
+npm run package:usgovqa
