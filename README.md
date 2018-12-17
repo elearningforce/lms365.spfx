@@ -17,11 +17,13 @@ This package produces the following:
 * dist/* - the bundled script, along with other resources
 * deploy/* - all resources which should be uploaded to a CDN.
 
-### Build options
-
+### Build options 
+Depends on environment you want to package:
+``` bash 
 npm run package:dev
-npm run package:qa
-npm run package:prod
-npm run package:hotfix
-npm run package:usgov
-npm run package:usgovqa
+npm run package:qa 
+npm run package:prod 
+npm run package:hotfix 
+npm run package:usgov 
+npm run package:usgovqa 
+```
