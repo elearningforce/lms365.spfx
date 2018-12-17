@@ -18,7 +18,7 @@
     "@microsoft/sp-webpart-base": "1.5.1",
     "@types/es6-promise": "0.0.33",
     "@types/webpack-env": "1.13.1",
-    "ef.lms365": "1.0.15"
+    "ef.lms365": "1.1.2"
   },
   "devDependencies": {
     "@microsoft/sp-build-web": "1.5.1",
