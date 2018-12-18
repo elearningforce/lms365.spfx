@@ -37,7 +37,9 @@ export abstract class LmsWebPart extends BaseClientSideWebPart<{}> {
         this.initializePageContext();
 
         EnvironmentConfigProvider.instance.get(x => {
-            const scriptUrl = `${x.assetsUrl}assets/js/${this.moduleKey}`;
+            const moduleKey = this.moduleKey.toLocaleLowerCase();
+            const moduleHash = x.getAssetHash(moduleKey);
+            const scriptUrl = `${x.assetsUrl}assets/js/${moduleKey}?version=${moduleHash}`;
             const scriptElement = this.createScriptElement(scriptUrl);
 
             this.domElement.innerHTML = `<div class="--efLms365${this.moduleKey}"></div>`;
