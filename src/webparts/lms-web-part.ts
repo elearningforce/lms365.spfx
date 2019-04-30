@@ -1,5 +1,4 @@
 import 'core-js/es6/array';
-import 'core-js/es6/string';
 
 import { Version } from '@microsoft/sp-core-library';
 import { BaseClientSideWebPart } from '@microsoft/sp-webpart-base';
